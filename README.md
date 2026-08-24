@@ -21,3 +21,9 @@ LLM is advanced AI systems built on **deep neural networks** designed to process
 1. LLM can generate creative prompts and answer questions  
 2. LLM can generate code, assist in identifying code errors and suggest fixes  
 3. LLM can translate across many languages  
+
+User input -> Tokenization -> Transformer Model -> Response
+
+## Ollama
+
+Ollama is a platform that allows users to run LLMs locally on their own machines. This allows users to interact with AI models without relying entirely on cloud-based APIs.
