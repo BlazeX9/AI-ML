@@ -16,7 +16,7 @@ Video: Multimodal systems like Sora by OpenAI, temporally coherent video clips f
 
 ## Large Language Model (LLM)
 
-LLM is advanced AI systems built on **deep neural networks** designed to process, understand and generate human-like text. LLMs Learn patterns, grammar and context from text and can answer questions, write content, translate languages and many more. Modern LLMs include OpenAI ChatGPT, Google Gemini, Anthropic Claude and Meta Llama
+LLM is advanced AI systems built on **deep neural networks** designed to process, understand and generate human-like text. Some of the modern LLMs are OpenAI ChatGPT, Google Gemini, Anthropic Claude and Meta Llama
 
 1. LLM can generate creative prompts and answer questions  
 2. LLM can generate code, assist in identifying code errors and suggest fixes  
@@ -24,6 +24,19 @@ LLM is advanced AI systems built on **deep neural networks** designed to process
 
 User input -> Tokenization -> Transformer Model -> Response
 
+## Tokenization
+
+Tokenization is the process of breaking text into smaller pieces called tokens so that an LLM can process it. A token can be a word, part of a word, punctuation mark or sometimes a character. LLMs process input as tokens not raw text. API usage and pricing are often based on the number of tokens. Tokenization affects how efficiently a model processes text. The same sentence can produce different numbers of tokens depending on the tokenizer.
+
+## Transformer Model
+
+A Transformer is the architecture designed to process and understand sequences of data, especially text. It focuses on understanding relationships within data to process information more effectively. It is the core architecture behind the modern LLMs.
+
 ## Ollama
 
-Ollama is a platform that allows users to run LLMs locally on their own machines. This allows users to interact with AI models without relying entirely on cloud-based APIs.
+Ollama is a platform that allows users to run LLMs locally on their own machines. This allows users to interact with AI models without relying entirely on cloud-based APIs. Some of the LLMs are Llama, Gemma, Qwen, DeepSeek, Mistral
+
+Install Ollama on machine -> Open terminal or command prompt -> Download and run a model -> ollama run llama3.2
+
+see the models installed on your machine: ollama list  
+download a model: ollama pull llama3.2
