@@ -67,5 +67,5 @@ Text Chunking: breaks large text into smaller manageable chunks
 Embedding: converts text into numerical vectors
 Vector Database: stores embeddings and enables similarity search for fast information retrieval
 Query Encoder: transforms the user’s query into a vector for comparison with stored embeddings
-Retriever: finds and returns the most relevant chunks from the database based on query similarity <br>
+Retriever: finds and returns the most relevant chunks from the database based on query similarity<br><br>
 ![Project Logo](https://media.geeksforgeeks.org/wp-content/uploads/20250210190608027719/How-Rag-works.webp)
