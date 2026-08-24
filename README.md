@@ -16,7 +16,7 @@ Video: Multimodal systems like Sora by OpenAI, temporally coherent video clips f
 
 ## Large Language Model (LLM)
 
-LLM is advanced AI systems built on **deep neural networks** designed to process, understand and generate human-like text. LLMs Learn patterns, grammar and context from text and can answer questions, write content, translate languages and many more. Modern LLMs include ChatGPT OpenAI, Google Gemini, Anthropic Claude and Meta Llama
+LLM is advanced AI systems built on **deep neural networks** designed to process, understand and generate human-like text. LLMs Learn patterns, grammar and context from text and can answer questions, write content, translate languages and many more. Modern LLMs include OpenAI ChatGPT, Google Gemini, Anthropic Claude and Meta Llama
 
 1. LLM can generate creative prompts and answer questions  
 2. LLM can generate code, assist in identifying code errors and suggest fixes  
