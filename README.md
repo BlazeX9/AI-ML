@@ -13,3 +13,11 @@ Generative AI is a type of artificial intelligence designed to create new conten
 Text: Uses large language models (**LLM**) to predict the next sequence  
 Images: Uses models like **DALL·E** or **Stable Diffusion** to create realistic visuals  
 Video: Multimodal systems like Sora by OpenAI, temporally coherent video clips from text or other prompts  
+
+## Large Language Model (LLM)
+
+LLM is advanced AI systems built on **deep neural networks** designed to process, understand and generate human-like text. LLMs Learn patterns, grammar and context from text and can answer questions, write content, translate languages and many more. Modern LLMs include ChatGPT (OpenAI), Google Gemini, Anthropic Claude. 
+
+LLM can generate creative prompts and answer questions  
+LLM can generate code, assist in identifying code errors and suggest fixes  
+LLM can translate across many languages  
