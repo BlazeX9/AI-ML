@@ -40,3 +40,12 @@ Install Ollama on machine -> Open terminal or command prompt -> Download and run
 
 see the models installed on your machine: ollama list  
 download a model: ollama pull llama3.2
+
+## Agentic AI
+
+Agentic AI is a system that can autonomously make decisions, plan actions and execute tasks to achieve specific goals with minimal human intervention. It focuses on goal-driven behavior, reasoning and interaction with tools and environments.
+
+1. Unlike traditional AI systems that primarily respond to inputs, Agentic AI focuses on autonomous decision-making and goal-driven actions  
+2. Chatbots uses no tools and gives static response where Agentic AI uses tools and performs dynamic workflows
+3. It can connect with and use specific APIs and databases to achieve its goal
+
