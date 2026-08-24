@@ -4,8 +4,7 @@ Machines performs tasks that typically require human intelligence, such as learn
 
 1. **Narrow AI**: Designed to perform a specific task or a limited set of tasks. It cannot operate outside its defined domain. Examples: Siri, Google Search
 2. **General AI**: An AI system that can perform any intellectual task a human can, with the ability to reason, learn and apply knowledge across different domains.
-3. **Super AI**: A hypothetical form of AI that surpasses human intelligence in all aspects, including reasoning, creativity, problem-solving and emotional intelligence.
-
+3. **Super AI**: A hypothetical form of AI that surpasses human intelligence in all aspects, including reasoning, creativity, problem-solving and emotional intelligence.  
 
 ## Generative AI
 
@@ -14,7 +13,6 @@ Generative AI is a type of artificial intelligence designed to create new conten
 Text: Uses large language models (**LLM**) to predict the next sequence  
 Images: Uses models like **DALL·E** or **Stable Diffusion** to create realistic visuals  
 Video: Multimodal systems like Sora by OpenAI, temporally coherent video clips from text or other prompts  
-
 
 ## Large Language Model (LLM)
 
