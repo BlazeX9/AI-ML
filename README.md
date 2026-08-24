@@ -1,1 +1,1 @@
-# AI-ML
+**Artificial Intelligence (AI)** refers to machines performing tasks that typically require human intelligence, such as **learning, reasoning, problem-solving and decision-making**. The goal of AI is to create systems that can **understand information, learn from data and make decisions or perform tasks autonomously**.
