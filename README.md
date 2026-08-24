@@ -6,7 +6,9 @@ Machines performs tasks that typically require human intelligence, such as learn
 2. **General AI**: An AI system that can perform any intellectual task a human can, with the ability to reason, learn and apply knowledge across different domains.
 3. **Super AI**: A hypothetical form of AI that surpasses human intelligence in all aspects, including reasoning, creativity, problem-solving and emotional intelligence.
 
-**Generative AI**: Generative AI is a type of artificial intelligence designed to create new content such as text, images, music or even code by learning patterns from existing data. These models use techniques like **deep learning** and **neural networks** to generate output. Generative AI is trained on large datasets like text, images, audio or video using deep learning networks.
+## Generative AI
+
+Generative AI is a type of artificial intelligence designed to create new content such as text, images, music or even code by learning patterns from existing data. These models use techniques like **deep learning** and **neural networks** to generate output. Generative AI is trained on large datasets like text, images, audio or video using deep learning networks.
 
 Text: Uses large language models (**LLM**) to predict the next sequence
 Images: Uses models like **DALL·E** or **Stable Diffusion**
