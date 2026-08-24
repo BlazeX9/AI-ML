@@ -11,5 +11,5 @@ Machines performs tasks that typically require human intelligence, such as learn
 Generative AI is a type of artificial intelligence designed to create new content such as text, images, music or even code by learning patterns from existing data. These models use techniques like **deep learning** and **neural networks** to generate output. Generative AI is trained on large datasets like text, images, audio or video using deep learning networks.
 
 Text: Uses large language models (**LLM**) to predict the next sequence  
-Images: Uses models like **DALL·E** or **Stable Diffusion**  
-Video: Multimodal systems like Sora by OpenAI, temporally coherent video clips from text or other prompts 
+Images: Uses models like **DALL·E** or **Stable Diffusion** to create realistic visuals  
+Video: Multimodal systems like Sora by OpenAI, temporally coherent video clips from text or other prompts  
