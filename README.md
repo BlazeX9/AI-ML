@@ -53,11 +53,7 @@ MCP is a standardized framework by Anthropic that enables AI models to connect w
 
 ## Retrieval Augmented Generation (RAG)
 
-RAG is a way to make AI answers more reliable by combining searching for relevant information from external sources (like documents or databases) and then uses it to give a better answer.
-
-1. Use user-specific data to give more relevant responses  
-2. No need to retrain the model every time new data comes in  
-3. Overcomes LLM restrictions like Hallucinations, Outdated knowledge and access to private documents
+RAG is a way to make AI answers more reliable by combining searching for relevant information from external sources (like documents or databases) and then uses it to give a better answer. RAG is cheaper and easier alternative to retraining/fine-tuning an LLM when need to provide it with new or private information.  
 
 External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Query Encoder -> Retriever -> Augmentation -> Response  
 
@@ -69,5 +65,5 @@ External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Qu
 **Augmentation**: At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br><br>
 ![Project Logo](https://media.geeksforgeeks.org/wp-content/uploads/20250210190608027719/How-Rag-works.webp)
 
-**Hallucinations**: Traditional generative models can produce incorrect information. RAG reduces this risk by retrieving verified external data  
-**FAISS**: Facebook AI Similarity Search is a vector database developed by Meta. It stores vector embeddings and performs fast similarity searches.
+**Hallucinations**: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
+**FAISS**: Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.
