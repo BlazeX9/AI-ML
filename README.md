@@ -16,7 +16,7 @@ Video: multimodal systems like Sora by OpenAI, temporally coherent video clips f
 
 ## Large Language Model (LLM)
 
-LLM is advanced AI systems built on **deep neural networks** designed to process, understand and generate human-like text. LLMs store knowledge in the form of parameters. The more parametric knowledge an LLM has the better it can perform. LLMs need to be pre-trained so their knowledge may become outdated depending on when they were last trained. Training an LLM with the latest or private data requires additional training which can be costly and fine-tuning requires deep technical knowledge. Every time the data changes fine-tuning may be needed so this is not a viable option when data needs to be updated very frequently. Some of the modern LLMs are OpenAI ChatGPT, Google Gemini, Anthropic Claude and Meta Llama. 
+LLM is built on **deep neural networks** designed to process, understand and generate human-like text. LLMs store knowledge in the form of parameters. The more parametric knowledge an LLM has the better it can perform. LLMs need to be pre-trained so their knowledge may become outdated depending on when they were last trained. Training an LLM with the latest or private data requires additional training which can be costly and fine-tuning requires deep technical knowledge. Every time the data changes fine-tuning may be needed so this is not a viable option when data needs to be updated very frequently. Some of the modern LLMs are OpenAI ChatGPT, Google Gemini, Anthropic Claude and Meta Llama. 
 
 User input -> Tokenization -> Transformer Model -> Response
 
