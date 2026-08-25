@@ -59,15 +59,15 @@ RAG is a way to make AI answers more reliable by combining searching for relevan
 2. No need to retrain the model every time new data comes in  
 3. Overcomes LLM restrictions like Hallucinations, Outdated knowledge and access to private documents
 
-External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Query Encoder -> Retriever -> LLM -> Response  
+External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Query Encoder -> Retriever -> Augmentation -> Response  
 
-**Text Chunking**: breaks large documents into smaller manageable chunks
-**Embedding**: converts text into numerical vectors
-**Vector Database**: stores embeddings and enables similarity search for fast information retrieval
-**Query Encoder**: transforms the user’s query into a vector for comparison with stored embeddings
-**Retriever**: finds and returns the most relevant chunks from the database based on query similarity<br><br>
+**Text Chunking**: Breaks large documents into small, semantically meaningful chunks (RecursiveCharacterTextSplitter)  
+**Embedding**: Converts each chunk into numerical vectors (OpenAIEmbeddings)  
+**Vector Database**: Stores embeddings and enables similarity search for fast information retrieval  
+**Query Encoder**: Transforms the user's query into a vector for comparison with stored embeddings  
+**Retriever**: Finds and returns the most relevant chunks from the database based on query similarity   
+**Augmentation**: At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br><br>
 ![Project Logo](https://media.geeksforgeeks.org/wp-content/uploads/20250210190608027719/How-Rag-works.webp)
 
 **Hallucinations**: Traditional generative models can produce incorrect information. RAG reduces this risk by retrieving verified external data  
 **FAISS**: Facebook AI Similarity Search is a vector database developed by Meta. It stores vector embeddings and performs fast similarity searches.
-
