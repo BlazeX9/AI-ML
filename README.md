@@ -49,8 +49,7 @@ External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Qu
 **Vector Database**: Stores embeddings and enables similarity search for fast information retrieval  
 **Query Encoder**: Transforms the user's query into a vector for comparison with stored embeddings  
 **Retriever**: Finds and returns the most relevant chunks from the database based on query similarity   
-**Augmentation**: At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br><br>
-![Project Logo](https://media.geeksforgeeks.org/wp-content/uploads/20250210190608027719/How-Rag-works.webp)
+**Augmentation**: At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br>
 
 **Hallucinations**: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
 **FAISS**: Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.
