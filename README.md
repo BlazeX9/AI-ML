@@ -38,21 +38,26 @@ Agentic AI is a system that can autonomously make decisions, plan actions and ex
 2. Chatbots uses no tools and gives static response where Agentic AI uses tools and performs dynamic workflows
 3. It can connect with and use specific APIs and databases to achieve its goal
 
+## LangChain
+
+LangChain is an open-source framework for developing applications powered by large language models. One benefit of using LangChain is its reusable components, which allow you to easily swap out language models, data sources and processing steps without rewriting the core code.
+
 ## Retrieval Augmented Generation (RAG)
 
 RAG is a way to make AI answers more reliable by combining searching for relevant information from external sources (like documents or databases) and then uses it to give a better answer. RAG is cheaper and easier alternative to retraining/fine-tuning an LLM when need to provide it with new or private information.  
 
 External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Query Encoder -> Retriever -> Augmentation -> Response  
 
-**Text Chunking**: Breaks large documents into small, semantically meaningful chunks (RecursiveCharacterTextSplitter)  
-**Embedding**: Converts each chunk into numerical vectors (OpenAIEmbeddings)  
+**Text Chunking**: Breaks large documents into small, semantically meaningful chunks  
+**Embedding**: Converts each chunk into numerical vectors  
 **Vector Database**: Stores embeddings and enables similarity search for fast information retrieval  
 **Query Encoder**: Transforms the user's query into a vector for comparison with stored embeddings  
 **Retriever**: Finds and returns the most relevant chunks from the database based on query similarity   
 **Augmentation**: At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br>
 
-**Hallucinations**: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
+**Hallucination**: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
 **FAISS**: Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.
+**Semantic Search**: 
 
 ## Model Context Protocol (MCP)
 
