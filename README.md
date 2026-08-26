@@ -30,15 +30,6 @@ Tokenization is the process of breaking text into smaller pieces called tokens s
 
 A Transformer is the architecture designed to process and understand sequences of data, especially text. It focuses on understanding relationships within data to process information more effectively. It is the core architecture behind the modern LLMs.
 
-## Ollama
-
-Ollama is a platform that allows users to run LLMs locally on their own machines. This allows users to interact with AI models without relying entirely on cloud-based APIs. Some of the LLMs are Llama, Gemma, Qwen, DeepSeek, Mistral
-
-Install Ollama on machine -> Open terminal or command prompt -> Download and run a model -> ollama run llama3.2
-
-see the models installed on your machine: ollama list  
-download a model: ollama pull llama3.2
-
 ## Agentic AI
 
 Agentic AI is a system that can autonomously make decisions, plan actions and execute tasks to achieve specific goals with minimal human intervention. It focuses on goal-driven behavior, reasoning and interaction with tools and environments.
@@ -46,10 +37,6 @@ Agentic AI is a system that can autonomously make decisions, plan actions and ex
 1. Unlike traditional AI systems that primarily respond to inputs, Agentic AI focuses on autonomous decision-making and goal-driven actions  
 2. Chatbots uses no tools and gives static response where Agentic AI uses tools and performs dynamic workflows
 3. It can connect with and use specific APIs and databases to achieve its goal
-
-## Model Context Protocol (MCP)
-
-MCP is a standardized framework by Anthropic that enables AI models to connect with external tools and data sources, providing secure, scalable and real time access without custom integrations
 
 ## Retrieval Augmented Generation (RAG)
 
@@ -67,3 +54,16 @@ External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Qu
 
 **Hallucinations**: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
 **FAISS**: Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.
+
+## Model Context Protocol (MCP)
+
+MCP is a standardized framework by Anthropic that enables AI models to connect with external tools and data sources, providing secure, scalable and real time access without custom integrations
+
+## Ollama
+
+Ollama is a platform that allows users to run LLMs locally on their own machines. This allows users to interact with AI models without relying entirely on cloud-based APIs. Some of the LLMs are Llama, Gemma, Qwen, DeepSeek, Mistral
+
+Install Ollama on machine -> Open terminal or command prompt -> Download and run a model -> ollama run llama3.2
+
+see the models installed on your machine: ollama list  
+download a model: ollama pull llama3.2
