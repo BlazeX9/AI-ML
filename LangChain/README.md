@@ -23,6 +23,7 @@ def sum_nums(a:int,b:int)->int:
 
 #Tool Binding
 llm_tools = llm.bind_tools([multiply_nums,sum_nums])
+
 tools_map = {
     "multiply_nums": multiply_nums,
     "sum_nums": sum_nums
