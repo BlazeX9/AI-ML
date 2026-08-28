@@ -28,7 +28,7 @@ tools_map = {
 }  
 <br>
 
-**Tool Calling: LLM only suggest which tool to use the execution is handled by langchain**  
+**Tool Calling: LLM only suggest which tool to use, the execution is handled by langchain**  
 user_query_res = llm_tools.invoke("Name 10 popular programming languages name only!")  
 print("Content:", user_query_res.content[0]["text"])  
 print("Tool suggested by LLM:",user_query_res.tool_calls)  
@@ -40,7 +40,7 @@ print("Tool suggested by LLM:",user_query_res.tool_calls[0]["name"])
 print("Tokens:", user_query_res.usage_metadata["total_tokens"])  
 <br>
 
-**Tool Execution**
+**Tool Execution**  
 toolname = user_query_res.tool_calls[0]["name"] #toolname returns string output, tools_map is used to match toolname wtih string value  
 toolargs = user_query_res.tool_calls[0]["args"]  
 
