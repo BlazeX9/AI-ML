@@ -41,7 +41,7 @@ print("Tokens:", user_query_res.usage_metadata["total_tokens"])
 <br>
 
 **Tool Execution**  
-toolname = user_query_res.tool_calls[0]["name"] #toolname returns string output, tools_map is used to match toolname wtih string value  
+toolname = user_query_res.tool_calls[0]["name"]  
 toolargs = user_query_res.tool_calls[0]["args"]  
 
 for i in tools_map:  
