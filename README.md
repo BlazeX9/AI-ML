@@ -57,7 +57,7 @@ External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Qu
 
 `Hallucination`: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
 `FAISS`: Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.  
-`Semantic Search`: 
+`Semantic Search`:  
 
 ## Model Context Protocol (MCP)
 
