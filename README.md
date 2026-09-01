@@ -48,7 +48,7 @@ RAG is a way to make AI answers more reliable by combining searching for relevan
 
 External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Query Encoder -> Retriever -> Augmentation -> Response  
 
-**Text Chunking**: Breaks large documents into small, semantically meaningful chunks  
+`Text Chunking`: Breaks large documents into small, semantically meaningful chunks  
 **Embedding**: Converts each chunk into numerical vectors  
 **Vector Database**: Stores embeddings and enables similarity search for fast information retrieval  
 **Query Encoder**: Transforms the user's query into a vector for comparison with stored embeddings  
