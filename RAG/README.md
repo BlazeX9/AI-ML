@@ -5,4 +5,9 @@ Chunk 1 → characters 1–100
 Chunk 2 → characters 81–180  
 Chunk 3 → characters 161–250  
 
-**`chunk_overlap:`** how much content is repeated between consecutive chunks
+**`chunk_overlap:`** how much content is repeated between consecutive chunks  
+Chunk 1:  
+"Python is a programming language that is very popular"  
+Chunk 2:  
+"very popular for data science and AI"  
+The last 20 characters of Chunk 1 are included again at the beginning of Chunk 2. The repeated preserve context helps when doing RAG/vector search.  
