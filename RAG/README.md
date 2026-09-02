@@ -4,3 +4,5 @@ If a document has 250 characters, its divided roughly like:
 Chunk 1 → characters 1–100  
 Chunk 2 → characters 81–180  
 Chunk 3 → characters 161–250  
+
+**`chunk_overlap:`** how much content is repeated between consecutive chunks
