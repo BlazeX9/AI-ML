@@ -1,4 +1,4 @@
-`chunk_size`: maximum size of each chunk  
+`chunk_size:` maximum size of each chunk  
 
 If a document has 250 characters, its divided roughly like:  
 Chunk 1 → characters 1–100  
