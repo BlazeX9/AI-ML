@@ -2,9 +2,9 @@ Machines performs tasks that typically require human intelligence, such as learn
 
 ## Types of AI Based on Capabilities
 
-1. `Narrow AI`: designed to perform a specific task or a limited set of tasks. It cannot operate outside its defined domain. Examples: Siri, Google Search
-2. `General AI`: an AI system that can perform any intellectual task a human can, with the ability to reason, learn and apply knowledge across different domains.
-3. `Super AI`: a hypothetical form of AI that surpasses human intelligence in all aspects, including reasoning, creativity, problem-solving and emotional intelligence.  
+1. **`Narrow AI:`** designed to perform a specific task or a limited set of tasks. It cannot operate outside its defined domain. Examples: Siri, Google Search
+2. **`General AI:`** an AI system that can perform any intellectual task a human can, with the ability to reason, learn and apply knowledge across different domains
+3. **`Super AI:`** a hypothetical form of AI that surpasses human intelligence in all aspects, including reasoning, creativity, problem-solving and emotional intelligence  
 
 ## Generative AI
 
@@ -48,16 +48,16 @@ RAG is a way to make AI answers more reliable by combining searching for relevan
 
 External Knowledge Source -> Text Chunking -> Embedding -> Vector Database -> Query Encoder -> Retriever -> Augmentation -> Response  
 
-`Text Chunking`: Breaks large documents into small, semantically meaningful chunks  
-`Embedding`: Converts each chunk into numerical vectors  
-`Vector Database`: Stores embeddings and enables similarity search for fast information retrieval  
-`Query Encoder`: Transforms the user's query into a vector for comparison with stored embeddings  
-`Retriever`: Finds and returns the most relevant chunks from the database based on query similarity   
-`Augmentation`: At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br>
+**`Text Chunking:`** Breaks large documents into small, semantically meaningful chunks  
+**`Embedding:`** Converts each chunk into numerical vectors  
+**`Vector Database:`** Stores embeddings and enables similarity search for fast information retrieval  
+**`Query Encoder:`** Transforms the user's query into a vector for comparison with stored embeddings  
+**`Retriever:`** Finds and returns the most relevant chunks from the database based on query similarity   
+**`Augmentation:`** At this step, retrieved documents are combined with the user's query to form a new enriched prompt for the LLM<br>
 
-`Hallucination`: Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
-`FAISS`: Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.  
-`Semantic Search`:  
+**`Hallucination:`** Traditional generative models can produce incorrect or fabricated information. RAG reduces this risk by retrieving relevant and verified external data as context.  
+**`FAISS:`** Facebook AI Similarity Search is a library developed by Meta for storing and efficiently searching vector embeddings. It performs fast similarity searches to find vectors that are most similar to a given query.  
+**`Semantic Search:`**  
 
 ## Model Context Protocol (MCP)
 
