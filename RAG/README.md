@@ -10,3 +10,5 @@ Chunk 3 → characters 161–250
 Chunk 1: "Python is a programming language that is very popular"  
 Chunk 2: "very popular for data science and AI"  
 The repeated characters helps while doing RAG/vector search.  
+
+**`search_kwargs`** how many most similar chunks retriever gets
