@@ -10,6 +10,7 @@ llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"),model="gpt-4.1-mini",temper
 from langchain_core.messages import SystemMessage,HumanMessage,AIMessage
 from langchain_core.output_parsers import StrOutputParser
 chain = llm | StrOutputParser()
+
 chat_history = [
     SystemMessage(content="You are a helpful assistant who replies in simple english and on topic. You are developed in the year 2026")
 ]
