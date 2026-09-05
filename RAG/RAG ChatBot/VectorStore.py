@@ -16,9 +16,8 @@ print("Chunks:",len(chunks))
 
 #Step 2: Text Embedding
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-embeddings = GoogleGenerativeAIEmbeddings(google_api_key=os.getenv("GOOGLE_API_KEY"),model="models/gemini-embedding-001")
-
 #from langchain_openai import OpenAIEmbeddings
+embeddings = GoogleGenerativeAIEmbeddings(google_api_key=os.getenv("GOOGLE_API_KEY"),model="models/gemini-embedding-001")
 #embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"),model="text-embedding-3-small")
 
 #Step 3: Indexing
