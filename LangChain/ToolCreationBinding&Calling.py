@@ -7,8 +7,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 llm = ChatGoogleGenerativeAI(api_key=os.getenv("GOOGLE_API_KEY"),model="gemini-3.5-flash-lite")
 #llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"),model="gpt-4.1-mini")
 
-from langchain_core.tools import tool
 #Tool Creation
+from langchain_core.tools import tool
 @tool
 def multiply_nums(a:int,b:int)->int:
     """Multiply two numbers"""
