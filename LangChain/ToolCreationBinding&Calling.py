@@ -45,4 +45,4 @@ while True:
         if toolname in tools_map:
             print("Answer:",tools_map[toolname].invoke(toolargs))
     else:
-        print("No tool called! Answer:", user_query_res.content[0]["text"])
+        print("No tool called! Answer:", user_query_res.content)
