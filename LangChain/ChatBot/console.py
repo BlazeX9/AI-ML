@@ -27,6 +27,7 @@ while True:
             continue
     
     chat_history.append(HumanMessage(content=user_input))
+    
     ai_response = chain.invoke(chat_history)
     chat_history.append(AIMessage(content=ai_response))
     print("Agent:",ai_response)
