@@ -5,7 +5,7 @@ load_dotenv()
 from langchain_openai import ChatOpenAI
 #from langchain_google_genai import ChatGoogleGenerativeAI
 llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"),model="gpt-4.1-mini",temperature=0)
-#llm = ChatGoogleGenerativeAI(api_key=os.getenv("GOOGLE_API_KEY"),model="gemini-3.5-flash-lite")
+#llm = ChatGoogleGenerativeAI(api_key=os.getenv("GOOGLE_API_KEY"),model="gemini-3.1-flash-lite")
 
 import pandas as pd
 reader = pd.read_excel("./Information.xlsx")
