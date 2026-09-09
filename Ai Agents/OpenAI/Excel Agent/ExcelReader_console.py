@@ -6,8 +6,8 @@ from openai import OpenAI
 llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 import pandas as pd
-reader = pd.read_excel("./students.xlsx")
-excel_data = reader.to_string(index=False)
+reader = pd.read_excel("./Information.xlsx")
+excel_data = reader.to_string(index=False)  #index=False → Don't include row numbers
 
 prompt = f"""
 You are a Excel reader assistant.
@@ -37,5 +37,5 @@ while True:
     )
 
     answer = response.output_text
-    chat_history.append({"role": "assistant","content": answer})
     print("\nAnswer:", answer)
+    chat_history.append({"role": "assistant","content": answer})
