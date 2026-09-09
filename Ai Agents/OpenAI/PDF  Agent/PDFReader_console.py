@@ -42,5 +42,5 @@ while True:
     )
 
     answer = response.output_text
-    chat_history.append({"role": "assistant","content": answer})
     print("\nAnswer:", answer)
+    chat_history.append({"role": "assistant","content": answer})
