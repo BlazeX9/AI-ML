@@ -19,6 +19,18 @@ warnings.filterwarnings("ignore",message="`langchain-community` is being sunset"
 from langchain_community.vectorstores import FAISS
 vectors = FAISS.load_local("./vector_db",embeddings,allow_dangerous_deserialization=True)
 
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+system_prompt = """
+You are a helpful AI assistant that answers questions based on the provided PDF content.
+Instructions: 
+- Answer the user's question using the information provided in the PDF. 
+- Give accurate, clear and concise answers. 
+- Do not make up or assume information that is not present in the context. 
+- If the answer cannot be found in the PDF say: "I couldn't find the answer in the provided PDF" 
+- If the user's question is not related to the PDF reply that you can only answer questions related to the provided PDF
+"""
+chat_history = [SystemMessage(content=system_prompt)]
+
 while True:
     user_input = input("User: ")
 
@@ -37,30 +49,16 @@ while True:
     for i in restriver_res: 
         context_text = context_text + i.page_content
 
-    #Prompt Construction
-    from langchain_core.prompts import PromptTemplate
-    prompt = PromptTemplate(
-        template = """
-        You are a helpful AI assistant that answers questions based on the provided PDF content.
-        Instructions: 
-        - Answer the user's question using the information provided in the PDF. 
-        - Give accurate, clear and concise answers. 
-        - Do not make up or assume information that is not present in the context. 
-        - If the answer cannot be found in the PDF say: "I couldn't find the answer in the provided PDF" 
-        - If the user's question is not related to the PDF reply that you can only answer questions related to the provided PDF
-        
-        Context: {context}
-        User Question: {question}
-        Answer: 
-        """,
-        input_variables = ['context','question']
-    )
+    user_message = f"""
+        Context: {context_text}
+        User Question: {user_input}
+    """
 
-    final_prompt = prompt.invoke({"context": context_text,"question": user_input})
+    chat_history.append(HumanMessage(content=user_message))
 
     #LLM Answer Generation
-    from langchain_core.output_parsers import StrOutputParser
-    chain = llm | StrOutputParser()
+    response = llm.invoke(chat_history)
+    ai_answer = response.content
+    print(ai_answer)
 
-    answer = chain.invoke(final_prompt)
-    print(answer)
+    chat_history.append(AIMessage(content=ai_answer))
