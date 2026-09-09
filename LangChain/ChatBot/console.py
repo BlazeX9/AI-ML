@@ -27,7 +27,7 @@ while True:
         break
     
     if user_input.strip() == "":
-        print("Please ask a question")
+        print("Please ask a question!")
         continue
     
     chat_history.append(HumanMessage(content=user_input))
