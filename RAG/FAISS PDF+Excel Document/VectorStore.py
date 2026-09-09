@@ -32,7 +32,6 @@ splitter = RecursiveCharacterTextSplitter(
 )
 
 chunks = splitter.create_documents([raw_text])
-print("Chunks:", len(chunks))
 
 from langchain_openai import OpenAIEmbeddings
 embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"), model="text-embedding-3-small")
@@ -41,5 +40,13 @@ import warnings
 warnings.filterwarnings("ignore", message="`langchain-community` is being sunset")
 
 from langchain_community.vectorstores import FAISS
-vectors = FAISS.from_documents(chunks, embeddings)
-vectors.save_local("./vector_db")
+VECTOR_DB_PATH = "./vector_db"
+if os.path.exists(VECTOR_DB_PATH):
+    vectors = FAISS.load_local(VECTOR_DB_PATH,embeddings,allow_dangerous_deserialization=True)
+    vectors.add_documents(chunks)
+    print(f"Added {len(chunks)} chunks to existing vector_db")
+else:
+    vectors = FAISS.from_documents(chunks,embeddings)
+    print(f"Created new vector_db with {len(chunks)} chunks")
+
+vectors.save_local(VECTOR_DB_PATH)
