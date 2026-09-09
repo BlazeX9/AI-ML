@@ -12,3 +12,10 @@ Chunk 2: "very popular for data science and AI"
 The repeated characters helps while doing RAG/vector search.  
 
 **`search_kwargs`** how many most similar chunks retriever gets
+
+## RAG Pipeline
+
+1. Document Ingestion
+   - Accept PDF, DOCX, Excel, CSV, HTML, etc.  
+   - Validate file type, size, permissions, and metadata.
+   - Store original documents in object storage such as S3/Azure Blob.  
