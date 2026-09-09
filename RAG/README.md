@@ -15,7 +15,18 @@ The repeated characters helps while doing RAG/vector search.
 
 ## RAG Pipeline
 
-1. Document Ingestion
-   - Accept PDF, DOCX, Excel, CSV, HTML, etc.  
-   - Validate file type, size, permissions, and metadata.
-   - Store original documents in object storage such as S3/Azure Blob.  
+1. Document Ingestion  
+   - Accept PDF, DOCX, Excel, CSV, HTML etc  
+   - Validate file type, size, permissions and metadata  
+   - Store original documents in object storage such as S3/Azure Blob  
+  
+2. Data Cleaning & Extraction  
+   - Remove unnecessary whitespace, headers/footers, duplicate content, corrupted characters etc  
+   - Use OCR for images
+  
+3. Chunking  
+   - Split documents into meaningful chunks  
+   - Use recursive, semantic or structure-aware chunking depending on the document  
+   - Add appropriate chunk overlap  
+  
+4. 
