@@ -1,6 +1,6 @@
 ## Model Context Protocol(MCP)
 
-MCP is a standard way for an AI application/LLM to connect to external tools and data sources. The AI application can communicate with MCP servers and those servers expose tools/data in a standardized way.  
+MCP is a standardized protocol that allows AI applications to connect to external tools, data and services in a consistent way.  
 
 1. MCP Host  
 2. MCP Client  
