@@ -14,10 +14,10 @@ print(response.content)
 
 #Prompt Template is a reusable structure for creating prompts with variables
 from langchain_core.prompts import PromptTemplate
-template = PromptTemplate(
+prompt = PromptTemplate(
     template="Explain {topic} in simple English",
     input_variables=["topic"]
 )
-chain = template | llm
-prompt = chain.invoke({"topic": "LangChain"})
-print(prompt.content)
+chain = prompt | llm
+response = chain.invoke({"topic": "LangChain"})
+print(response.content)
